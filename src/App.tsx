@@ -27,7 +27,7 @@ function App() {
     <div className="app">
       <div className='app_panel'>
         <Search onSearch={setText} />
-        { text && <p className='search_hint'>Showing users for {text}</p>}
+        { text?.length > 0 && <p className='search_hint'>Showing users for {text}</p>}
         <UserList users={users} />
       </div>
     </div>
