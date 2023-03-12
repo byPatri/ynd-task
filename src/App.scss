@@ -1,0 +1,29 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: lightgrey;
+  width: 100%;
+  height: 100%;
+}
+
+.app_panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+  padding: 15px;
+  width: 400px;
+}
+
+.app_panel:has( >.Mui-expanded){
+  .search_hint {
+    display: none;
+  }
+}
