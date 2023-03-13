@@ -24,6 +24,12 @@
   width: 400px;
 }
 
+.search_hint {
+  display: block;
+  color: black;
+  font-size: 0.75rem;
+}
+
 .app_panel:has( >.Mui-expanded){
   .search_hint {
     display: none;
